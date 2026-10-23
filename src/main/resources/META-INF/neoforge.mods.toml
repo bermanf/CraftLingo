@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="minehelper"
+version="0.2.0"
+displayName="Mine Helper"
+authors="Mine Helper"
+description='''Select text in a live Minecraft interface and learn languages with GPT. Choose from 16 explanation languages or follow Minecraft's language. Client-only.'''
+
+[[dependencies.minehelper]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.262,21.2)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.minehelper]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="CLIENT"
+
+[[mixins]]
+config="minehelper.mixins.json"
